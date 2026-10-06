@@ -1,5 +1,13 @@
 # Educate! Senior QA Engineer Assessment
 
+## Part 3: CI/CD and E2E tooling
+
+See [the framework comparison and merge-gate setup](docs/part3-ci-and-e2e.md).
+The [GitHub Actions workflow](.github/workflows/test.yml) runs the API suite on
+pull requests to `main` and uploads HTML/JUnit reports. Configure
+**Attendance API quality gate** as a required status check to block merging on
+test failures; the workflow alone does not enforce branch protection.
+
 ## Part 2: Attendance API testing
 
 Python and pytest fit the team's existing Python familiarity. Requests sends real
